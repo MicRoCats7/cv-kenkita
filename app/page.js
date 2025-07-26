@@ -268,7 +268,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {products.map((product, index) => (
               <div key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <Image src={product.src} alt={product.title} className="w-full h-96 object-cover rounded-lg" draggable="false" />
+                <Image src={product.src} alt={product.title} className="w-full md:h-56 h-96 object-cover rounded-lg" draggable="false" />
               </div>
             ))}
           </div>
