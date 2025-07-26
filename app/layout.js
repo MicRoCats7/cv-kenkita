@@ -13,12 +13,12 @@ export const metadata = {
   icons: {
     icon: [
       {
-        url: "/logo.webp",
-        type: "image/webp",
+        url: "/logo-single.png",
+        type: "image/png",
       }
     ],
-    shortcut: "/logo.webp",
-    apple: "/logo.webp",
+    shortcut: "/logo-single.png",
+    apple: "/logo-single.png",
   }
 };
 
