@@ -3,90 +3,16 @@
 import Navbar from "../components/Navbar"
 import logo from './assets/logo.webp';
 import { LuWrench } from "react-icons/lu";
-import { GoZap, GoClock } from "react-icons/go";
 import { FiTarget } from "react-icons/fi";
 import { LiaCheckCircle } from "react-icons/lia";
 import { IoEyeOutline } from "react-icons/io5";
 import imageAbout from './assets/image-about.webp';
 
-//image product
-import image1 from './assets/image-product/image1.jpeg';
-import image2 from './assets/image-product/image2.jpeg';
-import image3 from './assets/image-product/image3.jpeg';
-import image4 from './assets/image-product/image4.jpeg';
-import image5 from './assets/image-product/image5.jpeg';
-import image6 from './assets/image-product/image6.jpeg';
-import image7 from './assets/image-product/image7.jpeg';
-import image8 from './assets/image-product/image8.jpeg';
 import { useEffect } from "react";
 import Image from "next/image";
+import { products, services, whyChooseUs } from "@/utils/data";
 
 export default function Home() {
-  const services = [
-    {
-      icon: <LuWrench className="w-12 h-12 text-blue-600" />,
-      title: "Jasa Bubut Presisi",
-      description: "Layanan bubut dengan tingkat presisi tinggi untuk berbagai komponen industri"
-    },
-    {
-      icon: <GoZap className="w-12 h-12 text-blue-600" />,
-      title: "Permesinan CNC",
-      description: "Teknologi CNC modern untuk hasil yang akurat dan konsisten"
-    },
-    {
-      icon: <FiTarget className="w-12 h-12 text-blue-600" />,
-      title: "Custom Manufacturing",
-      description: "Solusi manufaktur khusus sesuai spesifikasi dan kebutuhan pelanggan"
-    },
-    {
-      icon: <GoClock className="w-12 h-12 text-blue-600" />,
-      title: "Rapid Prototyping",
-      description: "Pembuatan prototipe cepat untuk pengembangan produk"
-    }
-  ];
-
-  const whyChooseUs = [
-    "Presisi Tinggi",
-    "Pengerjaan Cepat dan Tepat Waktu",
-    "Harga Kompetitif",
-    "Tim Profesional dan Berpengalaman",
-    "Fleksibel untuk Berbagai Kebutuhan Industri"
-  ];
-
-  const products = [
-    {
-      src: image1,
-      title: "Produk 1"
-    },
-    {
-      src: image2,
-      title: "Produk 2"
-    },
-    {
-      src: image3,
-      title: "Produk 3"
-    },
-    {
-      src: image4,
-      title: "Produk 4"
-    },
-    {
-      src: image5,
-      title: "Produk 5"
-    },
-    {
-      src: image6,
-      title: "Produk 6"
-    },
-    {
-      src: image7,
-      title: "Produk 7"
-    },
-    {
-      src: image8,
-      title: "Produk 8"
-    }
-  ];
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -261,7 +187,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-[#181816] mb-4">Produk Kami</h2>
             <div className="w-24 h-1 bg-[#181816] mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Berbagai produk berkualitas tinggi yang kami produksi untuk memenuhi kebutuhan industri
+              Rubber bisa dalam bentuk sheet,tube,dan roll, Roll bisa sampai diameter 460 panjang 3 meter, Kekerasanya dari 35 shore a - 100 shore a
             </p>
           </div>
 
