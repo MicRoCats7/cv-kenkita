@@ -6,7 +6,6 @@ import { LuWrench } from "react-icons/lu";
 import { FiTarget } from "react-icons/fi";
 import { LiaCheckCircle } from "react-icons/lia";
 import { IoEyeOutline } from "react-icons/io5";
-import imageAbout from './assets/image-about.webp';
 
 import { useEffect } from "react";
 import Image from "next/image";
@@ -90,7 +89,8 @@ export default function Home() {
                 melayani berbagai kebutuhan industri manufaktur. Dengan pengalaman dan dedikasi tinggi,
                 kami menghadirkan solusi teknik yang akurat, cepat, dan dapat diandalkan.
               </p>
-
+            </div>
+            <div>
               <h4 className="text-xl font-semibold text-gray-800 mb-4">Mengapa Memilih Kami</h4>
               <div className="space-y-3">
                 {whyChooseUs.map((item, index) => (
@@ -100,9 +100,6 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-            </div>
-            <div className="w-full h-[500px] flex justify-center">
-              <Image src={imageAbout} alt="image about" className="object-cover h-full w-full rounded-full" draggable="false" />
             </div>
           </div>
         </div>
@@ -187,7 +184,7 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-[#181816] mb-4">Produk Kami</h2>
             <div className="w-24 h-1 bg-[#181816] mx-auto mb-6"></div>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Rubber bisa dalam bentuk sheet,tube,dan roll, Roll bisa sampai diameter 460 panjang 3 meter, Kekerasanya dari 35 shore a - 100 shore a
+              Karet tersedia dalam berbagai bentuk seperti sheet, tube, dan roll. Untuk bentuk roll, ukuran dapat mencapai diameter hingga 460 mm dengan panjang maksimum 3 meter. Tingkat kekerasan karet bervariasi dari 35 Shore A hingga 100 Shore A, sesuai kebutuhan Anda.
             </p>
           </div>
 
