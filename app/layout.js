@@ -1,6 +1,5 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import WhiteOverlay from "@/components/WhiteOverlay";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -28,7 +27,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${poppins.variable} antialiased`}>
         {children}
-        <WhiteOverlay />
       </body>
     </html>
   );

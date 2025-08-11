@@ -15,10 +15,12 @@ import image13 from '../app/assets/image-product/image13.jpeg';
 
 //icons
 import { LuWrench } from "react-icons/lu";
-import { GoZap, GoClock } from "react-icons/go";
 import { FiTarget } from "react-icons/fi";
-import { FaCogs, FaIndustry } from "react-icons/fa";
-import { MdBuild } from "react-icons/md";
+import { FaCogs } from "react-icons/fa";
+import { MdSettings } from "react-icons/md";
+import { GiGears } from "react-icons/gi";
+import { BsTools } from "react-icons/bs";
+import { TbTool } from "react-icons/tb";
 
 
 export const products = [
@@ -63,17 +65,9 @@ export const products = [
         title: "Produk 10"
     },
     {
-        src: image11,
-        title: "Produk 11"
-    },
-    {
         src: image12,
         title: "Produk 12"
     },
-    {
-        src: image13,
-        title: "Produk 13"
-    }
 ];
 
 export const services = [
@@ -82,15 +76,15 @@ export const services = [
         title: "Recover rubber roll (servis rubiber roll)"
     },
     {
-        icon: <GoZap className="w-12 h-12 text-blue-600" />,
+        icon: <GiGears className="w-12 h-12 text-blue-600" />,
         title: "Jasa perbuatan gear (material baja bronze)"
     },
     {
-        icon: <FiTarget className="w-12 h-12 text-blue-600" />,
+        icon: <BsTools className="w-12 h-12 text-blue-600" />,
         title: "Pembuatan dan Perbaikan Spare Part Mesin"
     },
     {
-        icon: <GoClock className="w-12 h-12 text-blue-600" />,
+        icon: <FiTarget className="w-12 h-12 text-blue-600" />,
         title: "Pembuatan Komponen Presisi Industri"
     },
     {
@@ -98,8 +92,12 @@ export const services = [
         title: "Pembuatan roll logo (material aluminium)"
     },
     {
-        icon: <MdBuild className="w-12 h-12 text-blue-600" />,
+        icon: <MdSettings className="w-12 h-12 text-blue-600" />,
         title: "Tersedia instrument (seranti pressure gauge transmitter)"
+    },
+    {
+        icon: <TbTool className="w-12 h-12 text-blue-600" />,
+        title: "Menyediakan custom canvas brake"
     }
 ];
 

@@ -162,17 +162,30 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
-              <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group">
+          <div className="flex flex-col items-center justify-center gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {services.slice(0, 6).map((service, index) => (
+                <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group">
+                  <div className="text-center">
+                    <div className="mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-base font-bold text-gray-800 mb-3">{service.title}</h3>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex justify-center">
+              <div className="bg-white rounded-xl shadow-lg p-11 hover:shadow-xl transition-shadow duration-300 group max-w-sm">
                 <div className="text-center">
                   <div className="mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
-                    {service.icon}
+                    {services[6].icon}
                   </div>
-                  <h3 className="text-base font-bold text-gray-800 mb-3">{service.title}</h3>
+                  <h3 className="text-base font-bold text-gray-800 mb-3">{services[6].title}</h3>
                 </div>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -187,12 +200,24 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            {products.map((product, index) => (
-              <div key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <Image src={product.src} alt={product.title} className="w-full md:h-56 h-96 object-cover rounded-lg" draggable="false" />
+          <div className="flex flex-col items-center justify-center gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {products.slice(0, 8).map((product, index) => (
+                <div key={index} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                  <Image src={product.src} alt={product.title} className="w-full md:h-56 h-96 object-cover rounded-lg" draggable="false" />
+                </div>
+              ))}
+            </div>
+
+            <div className="flex justify-center">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl">
+                {products.slice(8, 11).map((product, index) => (
+                  <div key={index + 8} className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+                    <Image src={product.src} alt={product.title} className="w-full md:h-56 h-96 object-cover rounded-lg" draggable="false" />
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
