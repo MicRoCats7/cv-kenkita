@@ -26,6 +26,10 @@ export default function Home() {
     }
   };
 
+  const handleWA = () => {
+    window.open("https://wa.me/62818521412", "_blank", "noopener,noreferrer");
+  };
+
   useEffect(() => {
     document.documentElement.style.scrollBehavior = 'smooth';
     return () => {
@@ -51,7 +55,9 @@ export default function Home() {
                 pengerjaan cepat, dan harga kompetitif untuk berbagai kebutuhan industri manufaktur.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
+                <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
+                  onClick={handleWA}
+                >
                   Konsultasi Gratis
                 </button>
                 <button className="border-2 border-white text-white hover:bg-white hover:text-blue-800 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
@@ -230,7 +236,9 @@ export default function Home() {
             terbaik untuk kebutuhan industri Anda
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200">
+            <button className="bg-yellow-500 hover:bg-yellow-600 text-black px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200"
+              onClick={handleWA}
+            >
               Hubungi Kami
             </button>
           </div>
@@ -249,18 +257,19 @@ export default function Home() {
             <div>
               <h4 className="text-lg font-semibold mb-4">Layanan</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Jasa Bubut Presisi</li>
-                <li>Permesinan CNC</li>
-                <li>Custom Manufacturing</li>
-                <li>Rapid Prototyping</li>
+                <li>Recover rubber roll</li>
+                <li>Jasa perbuatan gear</li>
+                <li>Pembuatan dan Perbaikan Spare Part Mesin</li>
+                <li>Pembuatan Komponen Presisi Industri</li>
+                <li>Tersedia instrument</li>
+                <li>Menyediakan custom canvas brake</li>
               </ul>
             </div>
             <div>
               <h4 className="text-lg font-semibold mb-4">Kontak</h4>
               <ul className="space-y-2 text-gray-400">
-                <li>Email: info@cvkenkita.com</li>
-                <li>Telepon: (021) 123-4567</li>
-                <li>WhatsApp: +62 812-3456-7890</li>
+                <li>Email: harliantoharli69@gmail.com</li>
+                <li>WhatsApp: +62 818-521-412</li>
               </ul>
             </div>
           </div>
