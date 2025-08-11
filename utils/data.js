@@ -17,6 +17,8 @@ import image13 from '../app/assets/image-product/image13.jpeg';
 import { LuWrench } from "react-icons/lu";
 import { GoZap, GoClock } from "react-icons/go";
 import { FiTarget } from "react-icons/fi";
+import { FaCogs, FaIndustry } from "react-icons/fa";
+import { MdBuild } from "react-icons/md";
 
 
 export const products = [
@@ -77,23 +79,27 @@ export const products = [
 export const services = [
     {
         icon: <LuWrench className="w-12 h-12 text-blue-600" />,
-        title: "Jasa Bubut Presisi",
-        description: "Layanan bubut dengan tingkat presisi tinggi untuk berbagai komponen industri"
+        title: "Recover rubber roll (servis rubiber roll)"
     },
     {
         icon: <GoZap className="w-12 h-12 text-blue-600" />,
-        title: "Permesinan CNC",
-        description: "Teknologi CNC modern untuk hasil yang akurat dan konsisten"
+        title: "Jasa perbuatan gear (material baja bronze)"
     },
     {
         icon: <FiTarget className="w-12 h-12 text-blue-600" />,
-        title: "Custom Manufacturing",
-        description: "Solusi manufaktur khusus sesuai spesifikasi dan kebutuhan pelanggan"
+        title: "Pembuatan dan Perbaikan Spare Part Mesin"
     },
     {
         icon: <GoClock className="w-12 h-12 text-blue-600" />,
-        title: "Rapid Prototyping",
-        description: "Pembuatan prototipe cepat untuk pengembangan produk"
+        title: "Pembuatan Komponen Presisi Industri"
+    },
+    {
+        icon: <FaCogs className="w-12 h-12 text-blue-600" />,
+        title: "Pembuatan roll logo (material aluminium)"
+    },
+    {
+        icon: <MdBuild className="w-12 h-12 text-blue-600" />,
+        title: "Tersedia instrument (seranti pressure gauge transmitter)"
     }
 ];
 

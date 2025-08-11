@@ -162,15 +162,14 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <div key={index} className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 group">
                 <div className="text-center">
                   <div className="mx-auto mb-4 group-hover:scale-110 transition-transform duration-300 flex items-center justify-center">
                     {service.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-gray-800 mb-3">{service.title}</h3>
-                  <p className="text-gray-600">{service.description}</p>
+                  <h3 className="text-base font-bold text-gray-800 mb-3">{service.title}</h3>
                 </div>
               </div>
             ))}
