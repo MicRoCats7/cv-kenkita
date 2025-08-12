@@ -89,7 +89,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 place-items-center">
             <div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-6">CV KenKita</h3>
+              <h3 className="text-2xl font-bold text-gray-800 mb-6 uppercase">CV KenKita</h3>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 CV KenKita adalah perusahaan yang bergerak di bidang jasa bubut dan permesinan presisi,
                 melayani berbagai kebutuhan industri manufaktur. Dengan pengalaman dan dedikasi tinggi,
