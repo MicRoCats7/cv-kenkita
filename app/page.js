@@ -91,7 +91,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-bold text-gray-800 mb-6 uppercase">CV KenKita</h3>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                CV KenKita adalah perusahaan yang bergerak di bidang jasa bubut dan permesinan presisi,
+                CV KENKITA adalah perusahaan yang bergerak di bidang jasa bubut dan permesinan presisi,
                 melayani berbagai kebutuhan industri manufaktur. Dengan pengalaman dan dedikasi tinggi,
                 kami menghadirkan solusi teknik yang akurat, cepat, dan dapat diandalkan.
               </p>
